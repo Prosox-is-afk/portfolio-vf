@@ -221,6 +221,7 @@ main {
     @media (max-width: 820px) {
         display: grid;
         grid-template-columns: 100%;
+        margin: 0 25px;
 
         .navbar {
             display: none;

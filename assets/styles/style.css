@@ -314,6 +314,7 @@ main {
   main {
     display: grid;
     grid-template-columns: 100%;
+    margin: 0 25px;
   }
   main .navbar {
     display: none;
