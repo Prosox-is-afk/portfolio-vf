@@ -121,13 +121,13 @@
 @media (max-width: 580px) {
     #side-bar {
         position: absolute;
-        width: 300px;
+        width: 335px;
         height: auto;
         background: var(--background);
         border-right: 2px solid var(--color1);
         border-bottom: 2px solid var(--color1);
         top: 0;
-        left: -300px;
+        left: -335px;
         transition: 0.5s ease-out;
         z-index: 4;
     }
