@@ -4,7 +4,7 @@
     }
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 1081px) and (max-width: 1080px) {
     #side-bar {
         position: absolute;
         width: 340px;
@@ -147,6 +147,88 @@
         display: block;
         margin-top: 4px;
         transition: 0.3s ease;
+    }
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: 0.3s ease;
+    }
+    .sidebar {
+        color: var(--black);
+        list-style: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+    .sidebar i {
+        text-align: center;
+        font-size: 22px;
+        min-width: 30px;
+    }
+
+    .sidebar:hover {
+        background: var(--color1);
+        color: var(--white);
+    }
+    #side-bar.active {
+        left: 0;
+    }
+    .active span {
+        position: absolute;
+    }
+    .active span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .active #hidden {
+        opacity: 0;
+    }
+
+    .active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .active ~ .content {
+        opacity: 0.1;
+    }
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Espace entre l'icône et le texte */
+        cursor: pointer;
+        font-size: 18px;
+        padding: 12px 20px;
+        transition: 0.3s ease;
+    }
+    .theme-toggle span {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        width: 100%;
+        transition: 0.3s ease;
+        position: relative;
+    }
+
+    .theme-toggle i {
+        font-size: 22px; /* Taille de l'icône */
+        min-width: 30px;
+    }
+
+    .theme-toggle:hover {
+        background: var(--color1);
+        color: var(--white);
     }
 }
 
