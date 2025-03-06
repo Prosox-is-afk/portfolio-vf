@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".navbar ul a");
     const currentPage = window.location.pathname.split("/").pop(); // Récupère la page actuelle
 
-    // console.log("Page actuelle détectée:", currentPage); // ✅ Vérifie que la bonne page est détectée
+    // Si l'URL est vide ou finit par un "/", on considère que c'est "index.html"
+    if (currentPage === "" || currentPage === "portfolio-vf/") {
+        currentPage = "index.html";
+    }
 
     navLinks.forEach((link) => {
-        console.log("Lien analysé:", link.getAttribute("href")); // ✅ Vérifie que les bons liens sont parcourus
+        // console.log("Lien analysé:", link.getAttribute("href")); // ✅ Vérifie que les bons liens sont parcourus
 
         if (link.getAttribute("href") === currentPage) {
             link.firstElementChild.classList.add("active"); // ✅ Ajoute la classe active au <li>
