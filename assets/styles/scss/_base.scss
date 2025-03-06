@@ -1,0 +1,59 @@
+// 📌 Réinitialisation de base pour une mise en page propre
+* {
+    margin: 0; // Supprime les marges par défaut
+    padding: 0; // Supprime les espacements internes
+    box-sizing: border-box; // Gère le dimensionnement sans débordements
+    scroll-behavior: smooth; // Ajoute un effet fluide lors des scrolls
+}
+
+// 📌 Réglages généraux du `body`
+body {
+    font-family: $font-body; // Définit la police globale (défini dans `_variables.scss`)
+    background: var(
+        --background
+    ); // Utilise les variables CSS pour la gestion des thèmes
+    color: var(--black); // Texte principal adapté au mode clair/sombre
+    line-height: 1.6; // Espacement entre les lignes pour une bonne lisibilité
+    min-height: 100vh; // Empêche que le body soit trop petit
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; // Animation fluide pour le changement de thème
+}
+
+// 📌 Effet de fondu pour les transitions de page
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+// 📌 Liens (supprime le soulignement et ajoute un effet au survol)
+a {
+    text-decoration: none; // Supprime le soulignement des liens
+    color: inherit; // Les liens prennent la couleur du texte environnant
+    transition: color 0.3s; // Animation fluide lors du changement de couleur
+
+    // &:hover {
+    //     color: var(--color1); // Change la couleur au survol
+    // }
+}
+
+// 📌 Images responsives (évite les débordements)
+img {
+    max-width: 100%; // Empêche les images de dépasser leur conteneur
+    height: auto; // Conserve les proportions des images
+}
+
+// 📌 Listes sans styles par défaut (utile pour personnaliser plus facilement)
+ul,
+ol {
+    list-style: none;
+}
+
+#title {
+    font-family: $font-title;
+    font-size: $font-size-large;
+    color: var(--color1);
+    text-transform: uppercase;
+
+    &:hover {
+        color: var(--color3);
+    }
+}

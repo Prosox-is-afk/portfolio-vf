@@ -1,0 +1,126 @@
+// 📌 SECTION NEWS - Conteneur principal
+.news {
+    background: var(--white); // Fond de la section
+    border: 2px solid var(--color1); // Bordure colorée
+    border-radius: 20px; // Coins arrondis
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+
+    // 📌 CATÉGORIES (Ex : "Annonces", "Objectifs", etc.)
+    .news-category {
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 22px;
+            color: var(--color1); // Couleur principale
+            border-bottom: 2px solid var(--color1);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+    }
+
+    // 📌 ÉLÉMENTS INDIVIDUELS (Ex : "Recherche de stage", "Expérimentations Next.js", etc.)
+    .news-item {
+        background: var(--white);
+        border-radius: 10px;
+        padding: 15px;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 10px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--black);
+            margin-bottom: 5px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 14px;
+            margin-bottom: 10px;
+
+            @media (max-width: 455px) {
+                font-size: 13px;
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                font-size: 14px;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    // 📌 LISTE DES OBJECTIFS (ex: "Obtenir mon BTS", "Devenir Freelance", etc.)
+    .todo-list {
+        padding: 10px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            padding: 10px 0;
+            position: relative;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+
+            @media (max-width: 455px) {
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: var(--color1);
+                filter: brightness(0.9); // Alternative à `darken()`
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+                user-select: none; // Empêche la sélection du texte lors du clic
+            }
+        }
+
+        // 📌 CHECKBOX STYLE (Cases à cocher pour les objectifs)
+        input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--color2);
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            user-select: none;
+            flex-shrink: 0;
+
+            &:hover {
+                filter: brightness(0.85); // Alternative à `darken()`
+            }
+
+            &:checked {
+                background: var(--black);
+                border-color: var(--black);
+            }
+
+            &:checked::after {
+                content: "✔";
+                color: var(--white);
+                font-size: 14px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: bold;
+            }
+        }
+    }
+}

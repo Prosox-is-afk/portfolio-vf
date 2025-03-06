@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact | Pierre Burnier - Développeur Web</title>
+        <meta
+            name="description"
+            content="Contactez-moi pour discuter de vos projets web ou d'une collaboration."
+        />
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div id="side-bar">
+            <div class="toggle-btn" id="btn">
+                <span></span>
+                <span id="hidden"></span>
+                <span></span>
+            </div>
+
+            <ul class="menu-mobile">
+                <li class="sidebar">
+                    <a href="index.html"
+                        ><i class="fa-solid fa-house"></i>
+                        Accueil
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="about.html"
+                        ><i class="fa-solid fa-user"></i>
+                        À propos
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="experience.html"
+                        ><i class="fa-solid fa-graduation-cap"></i>
+                        Expériences
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="projet.html"
+                        ><i class="fa-solid fa-laptop-code"></i>
+                        Projets
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="skill.html"
+                        ><i class="fa-solid fa-screwdriver-wrench"></i>
+                        Compétences
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="contact.html"
+                        ><i class="fa-solid fa-address-card"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="sidebar theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Mode sombre</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <nav>
+                    <h1><a href="./index.html" id="title">Mon Portfolio</a></h1>
+                    <i class="fa-solid fa-sun" id="theme-toggle"></i>
+                </nav>
+            </div>
+            <main>
+                <section class="profile">
+                    <img
+                        src="./assets/img/img-contact.png"
+                        alt="Avatar Pierre Burnier"
+                    />
+                    <h3>Pierre Burnier</h3>
+                    <div class="specialite">
+                        <p>
+                            Étudiant <br />
+                            Développeur Front-end
+                        </p>
+                    </div>
+                    <div class="icon-container">
+                        <ul>
+                            <a
+                                href="https://www.instagram.com/_.pierre.brn/"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-instagram"></i></li
+                            ></a>
+                            <a
+                                href="https://www.linkedin.com/in/pierre-burnier-986002339/"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-linkedin"></i></li
+                            ></a>
+                            <a
+                                href="https://github.com/Prosox-is-afk"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-github"></i></li
+                            ></a>
+                            <a
+                                href="https://discord.com/users/721003897967345764"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-discord"></i></li
+                            ></a>
+                        </ul>
+                    </div>
+                    <div class="infoperso">
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <p>+33 7 81 58 82 55</p>
+                        </div>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <p>pierreburnier07@gmail.com</p>
+                        </div>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p>Marseille, France</p>
+                        </div>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <p>7 Mars 2005</p>
+                        </div>
+                    </div>
+                    <a
+                        href="./assets/CV/BurnierPierre_CV.pdf"
+                        download="BurnierPierre_CV.pdf"
+                    >
+                        <button class="btn" id="cv-btn">
+                            Télécharger mon CV
+                        </button>
+                    </a>
+                </section>
+                <section class="contact">
+                    <h2>Contact</h2>
+                    <form
+                        action="mailto:pierreburnier07@gmail.com"
+                        method="post"
+                        enctype="text/plain"
+                    >
+                        <div class="input-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </section>
+
+                <section class="navbar">
+                    <div class="menu-container">
+                        <ul>
+                            <a href="index.html"
+                                ><li>
+                                    <i class="fa-solid fa-house"></i>
+                                    <p class="text">Accueil</p>
+                                </li></a
+                            >
+                            <a href="about.html"
+                                ><li>
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="text">À propos</p>
+                                </li></a
+                            >
+                            <a href="experience.html"
+                                ><li>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <p class="text">Expériences</p>
+                                </li></a
+                            >
+                            <a href="projet.html"
+                                ><li>
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <p class="text">Projets</p>
+                                </li></a
+                            >
+                            <a href="skill.html"
+                                ><li>
+                                    <i
+                                        class="fa-solid fa-screwdriver-wrench"
+                                    ></i>
+                                    <p class="text">Compétences</p>
+                                </li></a
+                            >
+                            <a href="contact.html"
+                                ><li>
+                                    <i class="fa-solid fa-address-card"></i>
+                                    <p class="text">Contact</p>
+                                </li></a
+                            >
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <h2>By Pierre B.</h2>
+            </footer>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

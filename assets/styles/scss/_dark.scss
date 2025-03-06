@@ -1,0 +1,16 @@
+// 🌙 Thème Dark - Appliqué si `.dark` est ajouté au `<body>`
+// Ce fichier définit les couleurs spécifiques au mode sombre
+// et est activé dynamiquement via JavaScript.
+
+.dark {
+    // 🎨 Couleurs principales pour le mode sombre
+    --background: #0b0b0a; // Fond sombre
+    --color1: #e0ce93; // Couleur principale (ex : titres, accents)
+    --color2: #5f5025; // Couleur secondaire (ex : boutons)
+    --color3: #c7c3a0; // Couleur tertiaire (ex : bordures, effets)
+
+    // 🎭 Couleurs générales utilisées sur le site
+    --white: #000000; // Le "blanc" devient noir pour le dark mode
+    --black: #ffffff; // Le "noir" devient blanc pour le dark mode
+    --grey: #181818; // Gris foncé pour les arrière-plans subtils
+}

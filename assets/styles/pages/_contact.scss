@@ -1,0 +1,74 @@
+// 📌 SECTION CONTACT - Conteneur principal
+.contact {
+    background: var(--white); // Fond de la section
+    border: 2px solid var(--color1); // Bordure principale
+    border-radius: 20px;
+    padding: 20px;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1100px;
+    text-align: left;
+
+    // 📌 TITRE PRINCIPAL (ex: "Contact")
+    h2 {
+        font-size: 22px;
+        color: var(--color1);
+        border-bottom: 2px solid var(--color1);
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+
+    // 📌 FORMULAIRE DE CONTACT
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    // 📌 GROUPE DES INPUTS (Nom, Email, Message)
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        // 📌 CHAMPS DE SAISIE (input et textarea)
+        input,
+        textarea {
+            padding: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.1); // ✅ Remplacement de `lighten()`
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border 0.3s ease-in-out;
+            resize: none;
+
+            &:focus {
+                border-color: var(--color1);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    // 📌 BOUTON D'ENVOI DU FORMULAIRE
+    button {
+        padding: 10px 15px;
+        background: var(--color1);
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            filter: brightness(0.85); // ✅ Alternative à `darken()`
+            transform: scale(1.05); // ✅ Effet de zoom au survol
+        }
+    }
+}

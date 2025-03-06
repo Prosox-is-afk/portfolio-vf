@@ -1,0 +1,102 @@
+// 📌 SECTION COMPÉTENCES - Conteneur principal
+.skills {
+    background: var(--white); // Fond de la section
+    border: 2px solid var(--color1); // Bordure principale
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+
+    // 📌 TITRE PRINCIPAL (ex: "Compétences")
+    h2 {
+        font-size: 22px;
+        color: var(--color1);
+        border-bottom: 2px solid var(--color1);
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+    }
+
+    // 📌 GRILLE DES COMPÉTENCES (affichage flexible)
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    // 📌 ÉLÉMENT INDIVIDUEL DANS LA GRILLE
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px; // ✅ Ajoute un espace entre l'icône et le texte
+
+        // 📌 STYLE DES ICÔNES (cadres autour des logos)
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--color1);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; // ✅ Assure que l'image s'adapte sans être coupée
+                padding: 8px;
+            }
+        }
+
+        // 📌 NOM DE LA COMPÉTENCE (HTML, CSS, JS, etc.)
+        span {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--color1);
+            margin-top: 5px; // ✅ Ajuste l'espacement sous l'icône
+        }
+    }
+
+    // 📌 SECTION DES QUALITÉS PERSONNELLES
+    .qualities {
+        margin-top: 30px;
+        text-align: center;
+
+        h3 {
+            font-size: 18px;
+            color: var(--color1);
+            margin-bottom: 10px;
+        }
+
+        // 📌 GRILLE DES QUALITÉS (ex: Rigueur, Adaptabilité...)
+        .qualities-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        // 📌 BADGES POUR CHAQUE QUALITÉ
+        .badge {
+            background: var(--background);
+            color: var(--color3);
+            border: 1px solid var(--color3);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

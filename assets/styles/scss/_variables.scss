@@ -1,0 +1,51 @@
+// 🎨 Importation des polices
+@font-face {
+    font-family: "Burbank Big Condensed";
+    src: url("../fonts/BurbankBigCondensed-Bold.otf");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+// 🔤 Polices
+$font-title: "Burbank Big Condensed", sans-serif;
+$font-body: "Poppins", sans-serif;
+
+// 📏 Tailles de texte
+$font-size-small: 14px;
+$font-size-medium: 16px;
+$font-size-large: 3rem;
+
+// 🎨 Variables de couleur pour le thème light (défaut)
+:root {
+    --background: #fef6dd;
+    --color1: #9d8640;
+    --color2: #e0ce93;
+    --color3: #403d22;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #d9d9d9;
+}
+
+// 🌙 Variables de couleur pour le thème dark
+.dark {
+    --background: #0b0b0a;
+    --color1: #e0ce93;
+    --color2: #5f5025;
+    --color3: #c7c3a0;
+    --white: #000000;
+    --black: #ffffff;
+    --grey: #181818;
+}
+
+// 🖋️ Application des polices
+h1 {
+    font-family: $font-title;
+    font-size: $font-size-large;
+    color: var(--color1);
+    text-transform: uppercase;
+}

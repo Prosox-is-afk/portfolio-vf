@@ -1,0 +1,64 @@
+@media (max-width: 1350px) {
+    // 📌 ICONES SOCIAUX - Réduction de taille en responsive
+    main .profile {
+        h3 {
+            margin-top: 110px;
+        }
+
+        .specialite p {
+            font-size: 14px;
+        }
+
+        ul {
+            width: 80%; // Réduit la largeur pour éviter l'étalement
+
+            li {
+                width: 30px; // Réduction de la taille du cercle
+                height: 30px;
+                padding: 9px;
+                font-size: 15px; // Réduction de la taille de l'icône
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    i {
+                        color: var(--color1);
+                    }
+                }
+            }
+        }
+
+        .infoperso {
+            .info {
+                .icons {
+                    padding: 8px;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 13px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    #cv-btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1260px) {
+    .navbar {
+        li i {
+            font-size: 4rem;
+            padding: 10px 0;
+        }
+
+        .text {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+// 📌 SECTION EXPÉRIENCES - Conteneur principal
+.experience {
+    background: var(--white); // Fond de la section
+    border: 2px solid var(--color1); // Bordure principale
+    border-radius: 20px;
+    padding: 35px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 900px; // Largeur max pour éviter une trop grande extension
+
+    // 📌 TITRE PRINCIPAL (ex: "Expériences")
+    h2 {
+        font-size: 22px;
+        color: var(--color1);
+        border-bottom: 2px solid var(--color1);
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    // 📌 CATEGORIES (ex: "Formation", "Stage & Expérience Pro", "Certifications")
+    .experience-category {
+        margin-bottom: 20px;
+    }
+
+    // 📌 ÉLÉMENT INDIVIDUEL D'EXPÉRIENCE (Ex: chaque diplôme, stage, certification)
+    .experience-item {
+        background: var(--white);
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px dashed var(--color1); // Bordure en pointillés pour différencier chaque bloc
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--black);
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        // 📌 DATE DE L'EXPÉRIENCE
+        .date {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.7); // Remplacement de `darken($color1, 20%)`
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+    }
+
+    // 📌 SECTION CERTIFICATIONS (ex: SecNum Académie)
+    .certification {
+        .experience-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--white);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .certification-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--black);
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        // 📌 IMAGE DE CERTIFICATION (ex: SecNum Académie)
+        img {
+            width: 500px; // ✅ Miniature du certificat
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            @media (max-width: 1260px) {
+                width: 350px;
+            }
+            @media (min-width: 820px) and (max-width: 1000px) {
+                width: 300px;
+            }
+            @media (max-width: 580px) {
+                width: 300px;
+            }
+        }
+    }
+}

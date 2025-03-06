@@ -1,0 +1,20 @@
+// import de tous les fichiers sass
+
+// thèmes
+@import "./scss/light";
+@import "./scss/dark";
+
+@import "./scss/variables";
+// PREMIER IMPORT
+@import "./scss/base";
+@import "./scss/layout";
+@import "./scss/components";
+@import "./scss/responsive";
+
+// SECOND IMPORT
+@import "./pages/news";
+@import "./pages/about";
+@import "./pages/experiences";
+@import "./pages/projects";
+@import "./pages/skills";
+@import "./pages/contact";

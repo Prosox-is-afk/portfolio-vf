@@ -1,0 +1,31 @@
+// 📌 Boutons génériques et bouton de téléchargement du CV
+.btn,
+#cv-btn {
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--color3); // Texte en couleur tertiaire
+    background: var(--white); // Fond blanc par défaut
+    border: 2px solid var(--color3); // Bordure assortie
+    border-radius: 10px; // Coins arrondis
+    margin: 20px 0 10px;
+    cursor: pointer;
+    letter-spacing: 1.1px;
+    transition: background 0.3s ease, color 0.3s ease,
+        transform 0.2s ease-in-out;
+
+    &:hover {
+        background: var(--color1); // Change la couleur de fond au survol
+        color: var(--white); // Change la couleur du texte au survol
+        transform: scale(1.05); // Effet de zoom léger
+    }
+}
+
+// 📌 Conteneur des boutons (ex: pour centrer un bouton dans une section)
+.btn-container {
+    display: flex;
+    justify-content: center; // Centre les boutons horizontalement
+    align-items: center; // Centre verticalement
+    margin: 20px auto; // Marge automatique pour rester au centre
+    width: 50%; // Ajuste la largeur pour ne pas être trop large
+}

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projets | Pierre Burnier - Développement Web</title>
+        <meta
+            name="description"
+            content="Découvrez mes projets web en HTML, CSS, JavaScript, React et Node.js."
+        />
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div id="side-bar">
+            <div class="toggle-btn" id="btn">
+                <span></span>
+                <span id="hidden"></span>
+                <span></span>
+            </div>
+
+            <ul class="menu-mobile">
+                <li class="sidebar">
+                    <a href="index.html"
+                        ><i class="fa-solid fa-house"></i>
+                        Accueil
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="about.html"
+                        ><i class="fa-solid fa-user"></i>
+                        À propos
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="experience.html"
+                        ><i class="fa-solid fa-graduation-cap"></i>
+                        Expériences
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="projet.html"
+                        ><i class="fa-solid fa-laptop-code"></i>
+                        Projets
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="skill.html"
+                        ><i class="fa-solid fa-screwdriver-wrench"></i>
+                        Compétences
+                    </a>
+                </li>
+                <li class="sidebar">
+                    <a href="contact.html"
+                        ><i class="fa-solid fa-address-card"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="sidebar theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Mode sombre</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <nav>
+                    <h1><a href="./index.html" id="title">Mon Portfolio</a></h1>
+                    <i class="fa-solid fa-sun" id="theme-toggle"></i>
+                </nav>
+            </div>
+            <main>
+                <section class="profile">
+                    <img
+                        src="./assets/img/img-project.png"
+                        alt="Avatar Pierre Burnier"
+                    />
+                    <h3>Pierre Burnier</h3>
+                    <div class="specialite">
+                        <p>
+                            Étudiant <br />
+                            Développeur Front-end
+                        </p>
+                    </div>
+                    <div class="icon-container">
+                        <ul>
+                            <a
+                                href="https://www.instagram.com/_.pierre.brn/"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-instagram"></i></li
+                            ></a>
+                            <a
+                                href="https://www.linkedin.com/in/pierre-burnier-986002339/"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-linkedin"></i></li
+                            ></a>
+                            <a
+                                href="https://github.com/Prosox-is-afk"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-github"></i></li
+                            ></a>
+                            <a
+                                href="https://discord.com/users/721003897967345764"
+                                target="_blank"
+                                ><li>
+                                    <i class="fa-brands fa-discord"></i></li
+                            ></a>
+                        </ul>
+                    </div>
+                    <div class="infoperso">
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <p>+33 7 81 58 82 55</p>
+                        </div>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <p>pierreburnier07@gmail.com</p>
+                        </div>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p>Marseille, France</p>
+                        </div>
+                        <div class="info">
+                            <div class="icons">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <p>7 Mars 2005</p>
+                        </div>
+                    </div>
+                    <a
+                        href="./assets/CV/BurnierPierre_CV.pdf"
+                        download="BurnierPierre_CV.pdf"
+                    >
+                        <button class="btn" id="cv-btn">
+                            Télécharger mon CV
+                        </button>
+                    </a>
+                </section>
+                <section class="projects">
+                    <h2>Projets</h2>
+                    <div class="projects-grid">
+                        <!-- Projets visibles dès le départ -->
+                        <div class="project-card">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/flappy-bide.PNG');
+                                    "
+                                >
+                                    <h3>Flappy Bide</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Un Flappy Bird clone en JavaScript
+                                        utilisant Canvas API. L'oiseau saute au
+                                        clic, évite des tuyaux générés
+                                        dynamiquement, accumule un score, et le
+                                        jeu redémarre en cas de collision.
+                                    </p>
+                                    <span class="date">📅 Février 2025</span>
+                                    <div class="technologies">
+                                        <span class="javascript"
+                                            >JavaScript</span
+                                        >
+                                        <span class="api">Canvas API</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/flappy-bide/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/flappy-bide"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/theresto.PNG');
+                                    "
+                                >
+                                    <h3>The Resto</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Intégration d'une maquette CSS pour un
+                                        restaurant fictif.
+                                    </p>
+                                    <span class="date">📅 Février 2025</span>
+                                    <div class="technologies">
+                                        <span class="html">HTML</span>
+                                        <span class="sass">SASS</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/projet-resto/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/projet-resto"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 & 4 -->
+                        <div class="project-card">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/yoga-routine.PNG');
+                                    "
+                                >
+                                    <h3>Yoga Routine</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Une application Web permettant
+                                        d'encourager les personnes à pratiquer
+                                        leur routine de Yoga de manière
+                                        quotidienne.
+                                    </p>
+                                    <span class="date">📅 Février 2025</span>
+                                    <div class="technologies">
+                                        <span class="html">HTML</span>
+                                        <span class="css">CSS</span>
+                                        <span class="javascript"
+                                            >JavaScript</span
+                                        >
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/yoga-routine/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/yoga-routine"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/anciensite.PNG');
+                                    "
+                                >
+                                    <h3>Ancien site Personnel</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        L'ancien site personnel que j'utilisais
+                                        pour montrer mes compétences.
+                                    </p>
+                                    <span class="date">📅 Octobre 2024</span>
+                                    <div class="technologies">
+                                        <span class="html">HTML</span>
+                                        <span class="css">CSS</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/prosox-is-afk.github.io"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 & 6 -->
+                        <div class="project-card">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/angelopaysagiste.PNG');
+                                    "
+                                >
+                                    <h3>Angelo Paysagiste</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Mon premier site vitrine pour un ami
+                                        nouvellement auto-entrepreneur. (Une
+                                        refonte sera bientôt faite).
+                                    </p>
+                                    <span class="date">📅 Septembre 2024</span>
+                                    <div class="technologies">
+                                        <span class="html">HTML</span>
+                                        <span class="css">CSS</span>
+                                        <span class="javascript"
+                                            >JavaScript</span
+                                        >
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://angelopaysagiste.fr/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/joke-app2.png');
+                                    "
+                                >
+                                    <h3>Générateur de blague</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Joke App est une application Web
+                                        générant des blagues sur demande, grâce
+                                        à une Api.
+                                    </p>
+                                    <span class="date">📅 Décembre 2024</span>
+                                    <div class="technologies">
+                                        <span class="css">CSS</span>
+                                        <span class="javascript"
+                                            >JavaScript</span
+                                        >
+                                        <span class="api">Api</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/joke-app/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/joke-app"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projets cachés (ils s'afficheront par lot de 2) -->
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/quiz-app.PNG');
+                                    "
+                                >
+                                    <h3>Quiz</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        C'est un Quiz JavaScript permettant de
+                                        tester vos connaissances sur 4 questions
+                                        !
+                                    </p>
+                                    <span class="date">📅 Décembre 2024</span>
+                                    <div class="technologies">
+                                        <span class="javascript"
+                                            >javascript</span
+                                        >
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/quiz-app/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/quiz-app"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/bubble-killing.PNG');
+                                    "
+                                >
+                                    <h3>Bubble Killing</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Un générateur de bulles de couleur
+                                        aléatoire pouvant être détruite au click
+                                        + compteur qui s'incrémente à chaque
+                                        bulle éclatée.
+                                    </p>
+                                    <span class="date">📅 Janvier 2025</span>
+                                    <div class="technologies">
+                                        <span class="javascript"
+                                            >javascript</span
+                                        >
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/bubble-killing/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/bubble-killing"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/lamontagne.PNG');
+                                    "
+                                >
+                                    <h3>La Montagne</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Intégration Web de la page d'accueil
+                                        d'un blog fictif sur la montagne.
+                                    </p>
+                                    <span class="date">📅 Novembre 2024</span>
+                                    <div class="technologies">
+                                        <span class="html">html</span>
+                                        <span class="sass">sass</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/maquette-moutain/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/maquette-moutain"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/country-api.PNG');
+                                    "
+                                >
+                                    <h3>Country Api</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Application permettant de filtrer les
+                                        pays selon certains critères.
+                                    </p>
+                                    <span class="date">📅 Janvier 2025</span>
+                                    <div class="technologies">
+                                        <span class="javascript"
+                                            >javascript</span
+                                        >
+                                        <span class="api">api</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/country-api/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/country-api"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/run.PNG');
+                                    "
+                                >
+                                    <h3>RUN</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Intégration Web d'une page d'accueil
+                                        fictive.
+                                    </p>
+                                    <span class="date">📅 Octobre 2024</span>
+                                    <div class="technologies">
+                                        <span class="html">html</span>
+                                        <span class="css">css</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/projet-run/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/projet-run"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/gaming-campus.PNG');
+                                    "
+                                >
+                                    <h3>Gaming Campus</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Intégration web de l'ancien design du
+                                        site : Gaming Campus.
+                                    </p>
+                                    <span class="date">📅 Ocotobre 2025</span>
+                                    <div class="technologies">
+                                        <span class="html">html</span>
+                                        <span class="css">css</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/gaming-campus/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/gaming-campus"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/meal-app.PNG');
+                                    "
+                                >
+                                    <h3>Meal App</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>
+                                        Application web de recette de cuisine,
+                                        fonctionnant grâce à une Api.
+                                    </p>
+                                    <span class="date">📅 Janvier 2025</span>
+                                    <div class="technologies">
+                                        <span class="javascript"
+                                            >javascript</span
+                                        >
+                                        <span class="api">api</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/meal-app/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/meal-app"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden">
+                            <div class="card-inner">
+                                <div
+                                    class="card-front"
+                                    style="
+                                        background-image: url('./assets/img/helium.PNG');
+                                    "
+                                >
+                                    <h3>Helium</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>Intégration web d'une maquette.</p>
+                                    <span class="date">📅 Octobre 2024</span>
+                                    <div class="technologies">
+                                        <span class="html">html</span>
+                                        <span class="css">css</span>
+                                        <span class="javascript"
+                                            >javascript</span
+                                        >
+                                    </div>
+                                    <div class="buttons">
+                                        <a
+                                            href="https://prosox-is-afk.github.io/mouse-effect-helium/"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le site</a
+                                        >
+                                        <a
+                                            href="https://github.com/Prosox-is-afk/mouse-effect-helium"
+                                            target="_blank"
+                                            class="btn"
+                                            >Voir le code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button id="show-more" class="btn">Voir plus</button>
+                    </div>
+                </section>
+
+                <section class="navbar">
+                    <div class="menu-container">
+                        <ul>
+                            <a href="index.html"
+                                ><li>
+                                    <i class="fa-solid fa-house"></i>
+                                    <p class="text">Accueil</p>
+                                </li></a
+                            >
+                            <a href="about.html"
+                                ><li>
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="text">À propos</p>
+                                </li></a
+                            >
+                            <a href="experience.html"
+                                ><li>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <p class="text">Expériences</p>
+                                </li></a
+                            >
+                            <a href="projet.html"
+                                ><li>
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <p class="text">Projets</p>
+                                </li></a
+                            >
+                            <a href="skill.html"
+                                ><li>
+                                    <i
+                                        class="fa-solid fa-screwdriver-wrench"
+                                    ></i>
+                                    <p class="text">Compétences</p>
+                                </li></a
+                            >
+                            <a href="contact.html"
+                                ><li>
+                                    <i class="fa-solid fa-address-card"></i>
+                                    <p class="text">Contact</p>
+                                </li></a
+                            >
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <h2>By Pierre B.</h2>
+            </footer>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

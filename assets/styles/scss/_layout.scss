@@ -1,0 +1,400 @@
+@media (min-width: 1081px) {
+    #side-bar {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    #side-bar {
+        position: absolute;
+        width: 350px;
+        height: auto;
+        background: var(--background);
+        border-right: 2px solid var(--color1);
+        border-bottom: 2px solid var(--color1);
+        top: 0;
+        left: -350px;
+        transition: 0.5s ease-out;
+        z-index: 4;
+    }
+    .toggle-btn {
+        position: absolute;
+        top: 30px;
+        left: 360px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+    .toggle-btn span {
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+        background: var(--color1);
+        display: block;
+        margin-top: 4px;
+        transition: 0.3s ease;
+    }
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: 0.3s ease;
+    }
+    .sidebar {
+        color: var(--black);
+        list-style: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+    .sidebar i {
+        text-align: center;
+        font-size: 22px;
+        min-width: 30px;
+    }
+
+    .sidebar:hover {
+        background: var(--color1);
+        color: var(--white);
+    }
+    #side-bar.active {
+        left: 0;
+    }
+    .active span {
+        position: absolute;
+    }
+    .active span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .active #hidden {
+        opacity: 0;
+    }
+
+    .active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .active ~ .content {
+        opacity: 0.1;
+    }
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Espace entre l'icône et le texte */
+        cursor: pointer;
+        font-size: 18px;
+        padding: 12px 20px;
+        transition: 0.3s ease;
+    }
+    .theme-toggle span {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        width: 100%;
+        transition: 0.3s ease;
+        position: relative;
+    }
+
+    .theme-toggle i {
+        font-size: 22px; /* Taille de l'icône */
+        min-width: 30px;
+    }
+
+    .theme-toggle:hover {
+        background: var(--color1);
+        color: var(--white);
+    }
+}
+
+// 📌 HEADER - Barre de navigation supérieure
+.header {
+    min-width: 400px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 15px 20px;
+
+    nav {
+        display: flex; // Utilisation de Flexbox pour aligner les éléments
+        justify-content: space-between; // Répartit les éléments à gauche et à droite
+        align-items: center; // Aligne verticalement
+        width: 100%;
+
+        h1 {
+            margin: 0;
+            font-size: $font-size-large;
+            font-weight: 900;
+            font-family: $font-title;
+            display: flex;
+            align-items: center;
+            letter-spacing: 1.1px;
+            transition: 0.2s ease;
+
+            &:hover {
+                color: var(--black);
+            }
+        }
+
+        // Icône pour le changement de thème (lune/soleil)
+        i {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            background: var(--color1);
+            border-radius: 50%;
+            padding: 30px;
+            color: var(--white);
+            transition: background 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background: var(--black);
+                color: var(--white);
+            }
+        }
+    }
+
+    @media (max-width: 1080px) {
+        visibility: hidden;
+    }
+}
+
+// 📌 MAIN - Structure générale de la page
+main {
+    display: grid;
+    grid-template-columns: 22% 60% 10%; // Organisation en trois colonnes
+    margin: 0 50px;
+    align-items: start;
+    justify-content: space-between;
+
+    @media (max-width: 1080px) {
+        display: grid;
+        grid-template-columns: 30% 60%;
+    }
+    @media (max-width: 820px) {
+        display: grid;
+        grid-template-columns: 100%;
+
+        .navbar {
+            display: none;
+        }
+    }
+
+    // 📌 SECTION PROFIL - Partie gauche
+    .profile {
+        text-align: center;
+        border: 2px solid var(--color1);
+        border-radius: 20px;
+        width: 100%;
+        margin: 65px auto 0;
+        position: relative;
+        padding: 20px;
+        background: var(--white);
+
+        img {
+            height: auto;
+            width: 150px;
+            border: 3px solid var(--color1);
+            border-radius: 20px;
+            object-fit: cover;
+            position: absolute;
+            top: -17%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            margin-bottom: 50px;
+            background: var(--background);
+
+            @media (max-width: 450px) {
+                top: -30%;
+            }
+        }
+
+        h3 {
+            margin-top: 100px;
+        }
+
+        // Spécialisation (ex: Développeur Fullstack)
+        .specialite p {
+            margin: 10px;
+            border: 1px solid var(--color1);
+            border-radius: 10px;
+            background: var(--background);
+            padding: 5px 10px;
+        }
+
+        // 📌 ICONES SOCIAUX
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            margin: 30px auto;
+
+            li {
+                border: 1px solid var(--color1);
+                border-radius: 50%;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.2s ease;
+                font-size: 17px;
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    i {
+                        color: var(--color1);
+                    }
+                }
+            }
+        }
+
+        // 📌 INFORMATIONS PERSONNELLES
+        .infoperso {
+            background: var(--background);
+            border-radius: 20px;
+            padding: 10px 5px;
+
+            @media (max-width: 450px) {
+                display: none;
+            }
+
+            .info {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                gap: 10px;
+                margin: 7px 0;
+                position: relative;
+
+                &:first-child,
+                &:last-child {
+                    margin: 0;
+                }
+
+                // Séparateur entre les infos (sauf la dernière)
+                &:not(:last-child)::after {
+                    content: "";
+                    position: absolute;
+                    width: 90%;
+                    left: 50%;
+                    bottom: -3px;
+                    transform: translateX(-50%);
+                    border-bottom: 1px dashed var(--color1);
+                }
+
+                .icons {
+                    background: var(--grey);
+                    border-radius: 10px;
+                    margin: 3px;
+                    padding: 10px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                p {
+                    text-align: left;
+                    display: block;
+                    font-size: 14px;
+                    word-break: break-all; // ✅ Force la coupure même au milieu du mot
+                    white-space: normal; // ✅ Assure que le texte peut revenir à la ligne
+                    max-width: 100%; // ✅ Empêche le dépassement
+                }
+            }
+        }
+    }
+
+    // 📌 NAVBAR - Menu latéral droit
+    .navbar {
+        position: sticky;
+        top: 50px;
+        text-align: center;
+        border: 2px solid var(--color1);
+        border-radius: 20px;
+        width: 100%;
+        margin: 50px auto 0;
+        padding: 15px;
+        background: var(--white);
+
+        @media (max-width: 1080px) {
+            display: none;
+        }
+
+        .menu-container {
+            width: 100%;
+            margin: 0 auto;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 10px 0;
+                gap: 20px;
+
+                li {
+                    background: var(--background);
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    padding: 10px 0;
+                    font-weight: bold;
+                    transition: 0.3s ease;
+                    font-size: 10px;
+
+                    &:hover {
+                        color: var(--white);
+                        background: var(--color1);
+                    }
+
+                    &.active {
+                        color: var(--white);
+                        background: var(--color1);
+                    }
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 📌 FOOTER - Bas de page
+footer {
+    margin: 150px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-family: $font-title;
+        font-size: $font-size-large;
+        color: var(--color1);
+    }
+}
