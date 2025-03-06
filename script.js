@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ✅ Fonction pour fermer la sidebar
     function closeSidebar() {
         sidebar.classList.remove("active");
-        sidebar.style.left = "-350px"; // ✅ Fait disparaître la sidebar vers la gauche
+        sidebar.style.left = "-340px"; // ✅ Fait disparaître la sidebar vers la gauche
         toggleBtn.classList.remove("active");
     }
 

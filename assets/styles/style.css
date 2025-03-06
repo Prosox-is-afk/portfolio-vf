@@ -108,7 +108,7 @@ ol {
     display: none;
   }
 }
-@media (min-width: 1081px) and (max-width: 1080px) {
+@media (min-width: 581px) and (max-width: 1080px) {
   #side-bar {
     position: absolute;
     width: 340px;
@@ -124,7 +124,7 @@ ol {
   .toggle-btn {
     position: absolute;
     top: 30px;
-    left: 360px;
+    left: 345px;
     cursor: pointer;
     height: 50px;
     width: 50px;
@@ -232,7 +232,7 @@ ol {
   .toggle-btn {
     position: absolute;
     top: 30px;
-    left: 360px;
+    left: 345px;
     cursor: pointer;
     height: 40px;
     width: 40px;
