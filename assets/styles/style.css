@@ -758,7 +758,7 @@ footer h2 {
 }
 @media (max-width: 560px) {
   .about .cards {
-    height: 325px;
+    height: 330px;
   }
 }
 .about .cards:hover {
