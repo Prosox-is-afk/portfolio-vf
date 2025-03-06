@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".navbar ul a");
-    const currentPage = window.location.pathname.split("/").pop(); // Récupère la page actuelle
+    let currentPage = window.location.pathname.split("/").pop(); // Récupère la page actuelle
 
-    // Si l'URL est vide ou finit par un "/", on considère que c'est "index.html"
-    if (currentPage === "" || currentPage === "portfolio-vf/") {
-        currentPage = "index.html";
+    // Cas où l'URL est vide ou finit par un "/"
+    if (currentPage === "" || currentPage === "portfolio-vf") {
+        currentPage = "index.html"; // On force "index.html" pour que la comparaison fonctionne
     }
 
     navLinks.forEach((link) => {
-        // console.log("Lien analysé:", link.getAttribute("href")); // ✅ Vérifie que les bons liens sont parcourus
+        const linkHref = link.getAttribute("href");
 
-        if (link.getAttribute("href") === currentPage) {
-            link.firstElementChild.classList.add("active"); // ✅ Ajoute la classe active au <li>
-            // console.log("Ajout de .active sur :", link.firstElementChild);
+        // Vérifie si le lien correspond à la page actuelle
+        if (
+            linkHref === currentPage ||
+            (currentPage === "index.html" && linkHref === "./")
+        ) {
+            link.firstElementChild.classList.add("active"); // Ajoute la classe active
         }
     });
 });
