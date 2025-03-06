@@ -7,6 +7,10 @@
     margin: 20px auto;
     width: 100%;
 
+    @media (max-width: 820px) {
+        padding: 20px 0;
+    }
+
     // 📌 CATÉGORIES (Ex : "Annonces", "Objectifs", etc.)
     .news-category {
         border-radius: 15px;

@@ -111,26 +111,26 @@ ol {
 @media (max-width: 1080px) {
   #side-bar {
     position: absolute;
-    width: 350px;
+    width: 340px;
     height: auto;
     background: var(--background);
     border-right: 2px solid var(--color1);
     border-bottom: 2px solid var(--color1);
     top: 0;
-    left: -350px;
+    left: -340px;
     transition: 0.5s ease-out;
     z-index: 4;
   }
   .toggle-btn {
     position: absolute;
     top: 30px;
-    left: 360px;
+    left: 350px;
     cursor: pointer;
     height: 50px;
     width: 50px;
   }
   .toggle-btn span {
-    width: 60px;
+    width: 50px;
     height: 10px;
     border-radius: 5px;
     background: var(--color1);
@@ -214,6 +214,37 @@ ol {
   .theme-toggle:hover {
     background: var(--color1);
     color: var(--white);
+  }
+}
+@media (max-width: 580px) {
+  #side-bar {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background: var(--background);
+    border-right: 2px solid var(--color1);
+    border-bottom: 2px solid var(--color1);
+    top: 0;
+    left: -300px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+  }
+  .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+  .toggle-btn span {
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    background: var(--color1);
+    display: block;
+    margin-top: 4px;
+    transition: 0.3s ease;
   }
 }
 .header {
@@ -547,6 +578,11 @@ footer h2 {
   padding: 20px;
   margin: 20px auto;
   width: 100%;
+}
+@media (max-width: 820px) {
+  .news {
+    padding: 20px 0;
+  }
 }
 .news .news-category {
   border-radius: 15px;
