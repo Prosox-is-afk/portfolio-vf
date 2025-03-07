@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const showMoreBtn = document.getElementById("show-more");
+
+    if (!showMoreBtn) return; // Si le bouton n'existe pas, on stoppe l'exécution ici
+
     const hiddenProjects = document.querySelectorAll(".project-card.hidden");
     let currentIndex = 0;
 
@@ -127,6 +130,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const burgerMenu = document.getElementById("burger-menu");
     const sidebar = document.getElementById("sidebar");
     const themeToggle = document.getElementById("theme-toggle");
+
+    // ✅ Vérifie si le menu burger existe avant d’exécuter le script
+    if (!burgerMenu || !sidebar) return;
+
     const overlay = document.createElement("div");
 
     overlay.classList.add("overlay");
