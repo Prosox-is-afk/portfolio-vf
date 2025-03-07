@@ -700,6 +700,12 @@ footer h2 {
 .news .news-item ul {
   padding-left: 20px;
 }
+@media (max-width: 820px) {
+  .news .news-item ul {
+    padding-left: 0;
+  }
+}
+
 .news .news-item ul li {
   font-size: 14px;
   padding: 5px 0;
